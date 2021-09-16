@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtNombres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/espacioTop"
+            android:hint="@string/Nombres"
+            android:textSize="@dimen/tamañoLetra" />
+
+        <EditText
+            android:id="@+id/editNombres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_marginLeft="@dimen/espacioTop"
+            android:textSize="@dimen/tamañoLetra"
+            android:text="Name" />
+
+        <TextView
+            android:id="@+id/txtApellidos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/espacioTop"
+            android:hint="@string/Apellidos"
+            android:textSize="@dimen/tamañoLetra" />
+
+        <EditText
+            android:id="@+id/editApellidos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_marginLeft="@dimen/espacioTop"
+            android:textSize="@dimen/tamañoLetra"
+            android:text="s" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espacioTop"
+            android:hint="@string/Lenguajes"
+            android:textSize="@dimen/tamañoLetra" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/chkJava"
+                android:layout_width="74dp"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Java" />
+
+            <CheckBox
+                android:id="@+id/chkPhp"
+                android:layout_width="73dp"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="php" />
+
+            <CheckBox
+                android:id="@+id/chkPython"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="python" />
+
+            <CheckBox
+                android:id="@+id/chkCsharp"
+                android:layout_width="88dp"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="C#" />
+
+            <CheckBox
+                android:id="@+id/chkCplus"
+                android:layout_width="89dp"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="C++" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espacioTop"
+            android:hint="@string/LenguajeFav"
+            android:textSize="@dimen/tamañoLetra" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp">
+
+            <RadioButton
+                android:id="@+id/rJava"
+                android:layout_width="69dp"
+                android:layout_height="wrap_content"
+                android:text="java" />
+
+            <RadioButton
+                android:id="@+id/rPhp"
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:text="php" />
+
+            <RadioButton
+                android:id="@+id/rPython"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:text="python" />
+
+            <RadioButton
+                android:id="@+id/rCsharp"
+                android:layout_width="73dp"
+                android:layout_height="wrap_content"
+                android:text="C#" />
+
+            <RadioButton
+                android:id="@+id/rCplus"
+                android:layout_width="81dp"
+                android:layout_height="wrap_content"
+                android:text="C++" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnAceptar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="@string/aceptar"
+            android:textSize="25dp" />
+
+    </LinearLayout>
+</RelativeLayout>
+

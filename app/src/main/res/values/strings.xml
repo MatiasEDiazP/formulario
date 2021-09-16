@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Formulario</string>
+    <string name="Nombres">Nombres:</string>
+    <string name="Apellidos">Apellidos:</string>
+    <string name="Lenguajes">Lenguajes de programación que maneja:</string>
+    <string name="LenguajeFav">Lenguaje preferido:</string>
+    <string name="aceptar">Aceptar</string>
+
+</resources>
