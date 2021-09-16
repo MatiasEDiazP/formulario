@@ -23,11 +23,10 @@
             android:id="@+id/editNombres"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/espacioTop"
             android:ems="10"
             android:inputType="textPersonName"
-            android:layout_marginLeft="@dimen/espacioTop"
-            android:textSize="@dimen/tamañoLetra"
-            android:text="Name" />
+            android:textSize="@dimen/tamañoLetra" />
 
         <TextView
             android:id="@+id/txtApellidos"
@@ -41,11 +40,10 @@
             android:id="@+id/editApellidos"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/espacioTop"
             android:ems="10"
             android:inputType="textPersonName"
-            android:layout_marginLeft="@dimen/espacioTop"
-            android:textSize="@dimen/tamañoLetra"
-            android:text="s" />
+            android:textSize="@dimen/tamañoLetra" />
 
         <TextView
             android:layout_width="match_parent"
@@ -63,7 +61,7 @@
                 android:layout_width="74dp"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                android:text="Java" />
+                android:text="java" />
 
             <CheckBox
                 android:id="@+id/chkPhp"
@@ -106,35 +104,46 @@
             android:layout_width="match_parent"
             android:layout_height="58dp">
 
-            <RadioButton
-                android:id="@+id/rJava"
-                android:layout_width="69dp"
-                android:layout_height="wrap_content"
-                android:text="java" />
 
-            <RadioButton
-                android:id="@+id/rPhp"
-                android:layout_width="72dp"
-                android:layout_height="wrap_content"
-                android:text="php" />
+            <RadioGroup
+                android:id="@+id/radio_group_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
 
-            <RadioButton
-                android:id="@+id/rPython"
-                android:layout_width="85dp"
-                android:layout_height="wrap_content"
-                android:text="python" />
+                <RadioButton
+                    android:id="@+id/rJava"
+                    android:layout_width="69dp"
+                    android:layout_height="wrap_content"
+                    android:text="java" />
 
-            <RadioButton
-                android:id="@+id/rCsharp"
-                android:layout_width="73dp"
-                android:layout_height="wrap_content"
-                android:text="C#" />
+                <RadioButton
+                    android:id="@+id/rPhp"
+                    android:layout_width="72dp"
+                    android:layout_height="wrap_content"
+                    android:text="php" />
 
-            <RadioButton
-                android:id="@+id/rCplus"
-                android:layout_width="81dp"
-                android:layout_height="wrap_content"
-                android:text="C++" />
+                <RadioButton
+                    android:id="@+id/rPython"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:text="python" />
+
+                <RadioButton
+                    android:id="@+id/rCsharp"
+                    android:layout_width="73dp"
+                    android:layout_height="wrap_content"
+                    android:text="C#" />
+
+                <RadioButton
+                    android:id="@+id/rCplus"
+                    android:layout_width="81dp"
+                    android:layout_height="wrap_content"
+                    android:text="C++" />
+
+            </RadioGroup>
+
         </LinearLayout>
 
         <Button
@@ -143,6 +152,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
+            android:onClick="mostrarDatos"
             android:text="@string/aceptar"
             android:textSize="25dp" />
 
